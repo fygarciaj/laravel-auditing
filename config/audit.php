@@ -119,7 +119,7 @@ return [
 
     'drivers' => [
         'database' => [
-            'table'      => 'audits',
+            'table'      => '@GCMAUDITS',
             'connection' => null,
         ],
     ],
@@ -133,5 +133,5 @@ return [
     |
     */
 
-    'console' => false,
+    'console' => true,
 ];

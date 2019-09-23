@@ -1,6 +1,6 @@
 {
-    "name": "owen-it/laravel-auditing",
-    "description": "Audit changes of your Eloquent models in Laravel/Lumen",
+    "name": "fygarciaj/laravel-auditing",
+    "description": "Audit changes of your Eloquent models in Laravel/Lumen modificado para adaptarlo a un proyecto",
     "keywords": [
         "accountability",
         "audit",
@@ -21,8 +21,8 @@
     "type": "package",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/owen-it/laravel-auditing/issues",
-        "source": "https://github.com/owen-it/laravel-auditing"
+        "issues": "https://github.com/fygarciaj/laravel-auditing/issues",
+        "source": "https://github.com/fygarciaj/laravel-auditing"
     },
     "authors": [
         {
@@ -70,7 +70,7 @@
         },
         "laravel": {
             "providers": [
-                "OwenIt\\Auditing\\AuditingServiceProvider"
+                "Fygarciaj\\Auditing\\AuditingServiceProvider"
             ]
         }
     },
