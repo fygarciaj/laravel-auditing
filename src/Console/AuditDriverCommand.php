@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenIt\Auditing\Console;
+namespace Fygarciaj\Auditing\Console;
 
 use Illuminate\Console\GeneratorCommand;
 

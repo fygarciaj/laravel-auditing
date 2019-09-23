@@ -1,13 +1,13 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Fygarciaj\Auditing;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-use OwenIt\Auditing\Contracts\Auditor;
-use OwenIt\Auditing\Console\AuditDriverCommand;
-use OwenIt\Auditing\Console\InstallCommand;
+use Fygarciaj\Auditing\Contracts\Auditor;
+use Fygarciaj\Auditing\Console\AuditDriverCommand;
+use Fygarciaj\Auditing\Console\InstallCommand;
 
 class AuditingServiceProvider extends ServiceProvider implements DeferrableProvider
 {
@@ -35,7 +35,7 @@ class AuditingServiceProvider extends ServiceProvider implements DeferrableProvi
         ]);
 
         $this->app->singleton(Auditor::class, function ($app) {
-            return new \OwenIt\Auditing\Auditor($app);
+            return new \Fygarciaj\Auditing\Auditor($app);
         });
     }
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace OwenIt\Auditing\Tests\Functional;
+namespace Fygarciaj\Auditing\Tests\Functional;
 
-use OwenIt\Auditing\Tests\AuditingTestCase;
+use Fygarciaj\Auditing\Tests\AuditingTestCase;
 
 class CommandTest extends AuditingTestCase
 {

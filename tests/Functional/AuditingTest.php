@@ -1,17 +1,17 @@
 <?php
 
-namespace OwenIt\Auditing\Tests\Functional;
+namespace Fygarciaj\Auditing\Tests\Functional;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Event;
 use InvalidArgumentException;
-use OwenIt\Auditing\Events\Auditing;
-use OwenIt\Auditing\Exceptions\AuditingException;
-use OwenIt\Auditing\Models\Audit;
-use OwenIt\Auditing\Tests\AuditingTestCase;
-use OwenIt\Auditing\Tests\Models\Article;
-use OwenIt\Auditing\Tests\Models\User;
+use Fygarciaj\Auditing\Events\Auditing;
+use Fygarciaj\Auditing\Exceptions\AuditingException;
+use Fygarciaj\Auditing\Models\Audit;
+use Fygarciaj\Auditing\Tests\AuditingTestCase;
+use Fygarciaj\Auditing\Tests\Models\Article;
+use Fygarciaj\Auditing\Tests\Models\User;
 
 class AuditingTest extends AuditingTestCase
 {

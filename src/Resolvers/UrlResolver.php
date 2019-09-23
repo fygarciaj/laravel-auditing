@@ -1,11 +1,11 @@
 <?php
 
-namespace OwenIt\Auditing\Resolvers;
+namespace Fygarciaj\Auditing\Resolvers;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Request;
 
-class UrlResolver implements \OwenIt\Auditing\Contracts\UrlResolver
+class UrlResolver implements \Fygarciaj\Auditing\Contracts\UrlResolver
 {
     /**
      * {@inheritdoc}

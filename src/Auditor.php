@@ -1,15 +1,15 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Fygarciaj\Auditing;
 
 use Illuminate\Support\Manager;
 use InvalidArgumentException;
-use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Contracts\AuditDriver;
-use OwenIt\Auditing\Drivers\Database;
-use OwenIt\Auditing\Events\Audited;
-use OwenIt\Auditing\Events\Auditing;
-use OwenIt\Auditing\Exceptions\AuditingException;
+use Fygarciaj\Auditing\Contracts\Auditable;
+use Fygarciaj\Auditing\Contracts\AuditDriver;
+use Fygarciaj\Auditing\Drivers\Database;
+use Fygarciaj\Auditing\Events\Audited;
+use Fygarciaj\Auditing\Events\Auditing;
+use Fygarciaj\Auditing\Exceptions\AuditingException;
 
 class Auditor extends Manager implements Contracts\Auditor
 {
@@ -78,7 +78,7 @@ class Auditor extends Manager implements Contracts\Auditor
     /**
      * Create an instance of the Database audit driver.
      *
-     * @return \OwenIt\Auditing\Drivers\Database
+     * @return \Fygarciaj\Auditing\Drivers\Database
      */
     protected function createDatabaseDriver(): Database
     {
@@ -88,8 +88,8 @@ class Auditor extends Manager implements Contracts\Auditor
     /**
      * Fire the Auditing event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable   $model
-     * @param \OwenIt\Auditing\Contracts\AuditDriver $driver
+     * @param \Fygarciaj\Auditing\Contracts\Auditable   $model
+     * @param \Fygarciaj\Auditing\Contracts\AuditDriver $driver
      *
      * @return bool
      */

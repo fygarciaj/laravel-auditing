@@ -53,12 +53,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OwenIt\\Auditing\\": "src/"
+            "Fygarciaj\\Auditing\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OwenIt\\Auditing\\Tests\\": "tests/"
+            "Fygarciaj\\Auditing\\Tests\\": "tests/"
         }
     },
     "suggest": {

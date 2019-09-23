@@ -1,8 +1,8 @@
 <?php
 
-namespace OwenIt\Auditing\Redactors;
+namespace Fygarciaj\Auditing\Redactors;
 
-class LeftRedactor implements \OwenIt\Auditing\Contracts\AttributeRedactor
+class LeftRedactor implements \Fygarciaj\Auditing\Contracts\AttributeRedactor
 {
     /**
      * {@inheritdoc}

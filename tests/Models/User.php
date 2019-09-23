@@ -1,15 +1,15 @@
 <?php
 
-namespace OwenIt\Auditing\Tests\Models;
+namespace Fygarciaj\Auditing\Tests\Models;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-use OwenIt\Auditing\Contracts\Auditable;
+use Fygarciaj\Auditing\Contracts\Auditable;
 
 class User extends Model implements Auditable, Authenticatable
 {
     use \Illuminate\Auth\Authenticatable;
-    use \OwenIt\Auditing\Auditable;
+    use \Fygarciaj\Auditing\Auditable;
 
     /**
      * {@inheritdoc}

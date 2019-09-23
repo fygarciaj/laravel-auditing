@@ -1,20 +1,20 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Fygarciaj\Auditing;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
-use OwenIt\Auditing\Contracts\AttributeEncoder;
-use OwenIt\Auditing\Contracts\AttributeRedactor;
-use OwenIt\Auditing\Contracts\IpAddressResolver;
-use OwenIt\Auditing\Contracts\UrlResolver;
-use OwenIt\Auditing\Contracts\UserAgentResolver;
-use OwenIt\Auditing\Contracts\UserResolver;
-use OwenIt\Auditing\Exceptions\AuditableTransitionException;
-use OwenIt\Auditing\Exceptions\AuditingException;
+use Fygarciaj\Auditing\Contracts\AttributeEncoder;
+use Fygarciaj\Auditing\Contracts\AttributeRedactor;
+use Fygarciaj\Auditing\Contracts\IpAddressResolver;
+use Fygarciaj\Auditing\Contracts\UrlResolver;
+use Fygarciaj\Auditing\Contracts\UserAgentResolver;
+use Fygarciaj\Auditing\Contracts\UserResolver;
+use Fygarciaj\Auditing\Exceptions\AuditableTransitionException;
+use Fygarciaj\Auditing\Exceptions\AuditingException;
 
 trait Auditable
 {

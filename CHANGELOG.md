@@ -189,7 +189,7 @@
 
 ## v4.0.2 (2017-03-18)
 ### Added
-- `OwenIt\Auditing\Contracts\UserResolver` interface
+- `Fygarciaj\Auditing\Contracts\UserResolver` interface
 - More `Auditable` tests
 
 ### Fixed

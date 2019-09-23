@@ -1,10 +1,10 @@
 <?php
 
-namespace OwenIt\Auditing\Resolvers;
+namespace Fygarciaj\Auditing\Resolvers;
 
 use Illuminate\Support\Facades\Request;
 
-class UserAgentResolver implements \OwenIt\Auditing\Contracts\UserAgentResolver
+class UserAgentResolver implements \Fygarciaj\Auditing\Contracts\UserAgentResolver
 {
     /**
      * {@inheritdoc}

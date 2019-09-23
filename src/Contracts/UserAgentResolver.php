@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenIt\Auditing\Contracts;
+namespace Fygarciaj\Auditing\Contracts;
 
 interface UserAgentResolver
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Fygarciaj\Auditing;
 
 use DateTimeInterface;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Eloquent\Model;
-use OwenIt\Auditing\Contracts\AttributeEncoder;
+use Fygarciaj\Auditing\Contracts\AttributeEncoder;
 
 trait Audit
 {

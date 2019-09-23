@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenIt\Auditing\Exceptions;
+namespace Fygarciaj\Auditing\Exceptions;
 
 use Throwable;
 

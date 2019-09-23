@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use OwenIt\Auditing\Tests\Models\User;
+use Fygarciaj\Auditing\Tests\Models\User;
 
 /*
 |--------------------------------------------------------------------------

@@ -1,9 +1,9 @@
 <?php
 
-namespace OwenIt\Auditing\Tests;
+namespace Fygarciaj\Auditing\Tests;
 
-use OwenIt\Auditing\AuditableObserver;
-use OwenIt\Auditing\Tests\Models\Article;
+use Fygarciaj\Auditing\AuditableObserver;
+use Fygarciaj\Auditing\Tests\Models\Article;
 
 class AuditableObserverTest extends AuditingTestCase
 {

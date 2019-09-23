@@ -1,8 +1,8 @@
 <?php
 
-namespace OwenIt\Auditing\Encoders;
+namespace Fygarciaj\Auditing\Encoders;
 
-class Base64Encoder implements \OwenIt\Auditing\Contracts\AttributeEncoder
+class Base64Encoder implements \Fygarciaj\Auditing\Contracts\AttributeEncoder
 {
     /**
      * {@inheritdoc}

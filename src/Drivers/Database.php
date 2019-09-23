@@ -1,11 +1,11 @@
 <?php
 
-namespace OwenIt\Auditing\Drivers;
+namespace Fygarciaj\Auditing\Drivers;
 
 use Illuminate\Support\Facades\Config;
-use OwenIt\Auditing\Contracts\Audit;
-use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Contracts\AuditDriver;
+use Fygarciaj\Auditing\Contracts\Audit;
+use Fygarciaj\Auditing\Contracts\Auditable;
+use Fygarciaj\Auditing\Contracts\AuditDriver;
 
 class Database implements AuditDriver
 {
@@ -14,7 +14,7 @@ class Database implements AuditDriver
      */
     public function audit(Auditable $model): Audit
     {
-        $implementation = Config::get('audit.implementation', \OwenIt\Auditing\Models\Audit::class);
+        $implementation = Config::get('audit.implementation', \Fygarciaj\Auditing\Models\Audit::class);
 
         return call_user_func([$implementation, 'create'], $model->toAudit());
     }

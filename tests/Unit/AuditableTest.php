@@ -1,21 +1,21 @@
 <?php
 
-namespace OwenIt\Auditing\Tests;
+namespace Fygarciaj\Auditing\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
-use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Encoders\Base64Encoder;
-use OwenIt\Auditing\Exceptions\AuditableTransitionException;
-use OwenIt\Auditing\Exceptions\AuditingException;
-use OwenIt\Auditing\Models\Audit;
-use OwenIt\Auditing\Redactors\LeftRedactor;
-use OwenIt\Auditing\Redactors\RightRedactor;
-use OwenIt\Auditing\Tests\Models\ApiModel;
-use OwenIt\Auditing\Tests\Models\Article;
-use OwenIt\Auditing\Tests\Models\User;
+use Fygarciaj\Auditing\Contracts\Auditable;
+use Fygarciaj\Auditing\Encoders\Base64Encoder;
+use Fygarciaj\Auditing\Exceptions\AuditableTransitionException;
+use Fygarciaj\Auditing\Exceptions\AuditingException;
+use Fygarciaj\Auditing\Models\Audit;
+use Fygarciaj\Auditing\Redactors\LeftRedactor;
+use Fygarciaj\Auditing\Redactors\RightRedactor;
+use Fygarciaj\Auditing\Tests\Models\ApiModel;
+use Fygarciaj\Auditing\Tests\Models\Article;
+use Fygarciaj\Auditing\Tests\Models\User;
 use ReflectionClass;
 
 class AuditableTest extends AuditingTestCase
@@ -911,7 +911,7 @@ class AuditableTest extends AuditingTestCase
     public function itFailsToTransitionWhenTheAuditAuditableTypeDoesNotMatchTheModelType()
     {
         $this->expectException(AuditableTransitionException::class);
-        $this->expectExceptionMessage('Expected Auditable type OwenIt\Auditing\Tests\Models\Article, got OwenIt\Auditing\Tests\Models\User instead');
+        $this->expectExceptionMessage('Expected Auditable type Fygarciaj\Auditing\Tests\Models\Article, got Fygarciaj\Auditing\Tests\Models\User instead');
 
         $audit = factory(Audit::class)->make([
             'auditable_type' => User::class,
@@ -1057,7 +1057,7 @@ class AuditableTest extends AuditingTestCase
             $model->transitionTo($incompatibleAudit);
         } catch (AuditableTransitionException $e) {
             $this->assertSame(
-                'Incompatibility between [OwenIt\Auditing\Tests\Models\Article:1] and [OwenIt\Auditing\Models\Audit:3]',
+                'Incompatibility between [Fygarciaj\Auditing\Tests\Models\Article:1] and [Fygarciaj\Auditing\Models\Audit:3]',
                 $e->getMessage()
             );
 
