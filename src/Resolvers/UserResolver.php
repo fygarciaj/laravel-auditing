@@ -19,6 +19,7 @@ class UserResolver implements \Fygarciaj\Auditing\Contracts\UserResolver
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
+                Auth::shouldUse($guard);
                 return Auth::guard($guard)->user();
             }
         }
